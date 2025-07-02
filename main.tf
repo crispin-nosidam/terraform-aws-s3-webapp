@@ -51,6 +51,7 @@ resource "aws_s3_bucket_policy" "policy" {
 {
     "Version": "2012-10-17",
     "Statement": [
+        /*
         {
             "Sid": "PublicReadGetObject",
             "Effect": "Allow",
@@ -62,6 +63,7 @@ resource "aws_s3_bucket_policy" "policy" {
                 "arn:aws:s3:::${aws_s3_bucket.bucket.id}/*"
             ]
         }
+        */
     ]
 }
 EOF
